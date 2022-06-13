@@ -101,6 +101,7 @@ function buildAndShowHomeHTML (categories) {
       // TODO: STEP 2: Here, call chooseRandomCategory, passing it retrieved 'categories'
       // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
       // variable's name implies it expects.
+      console.log("categories are: " + categories);
       var chosenCategoryShortName = chooseRandomCategory(categories);
 
 
@@ -115,6 +116,7 @@ function buildAndShowHomeHTML (categories) {
       // Hint: you need to surround the chosen category short name with something before inserting
       // it into the home html snippet.
       //
+      console.log("chosenCategoryShortName is " + chosenCategoryShortName);
       var homeHtmlToInsertIntoMainPage =  $dc.loadMenuItems(chosenCategoryShortName);
 
 
